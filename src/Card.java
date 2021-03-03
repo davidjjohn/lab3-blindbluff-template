@@ -21,19 +21,19 @@ public class Card {
 
     // constructor
     public Card(int cardcode){
-
-
+        myRank = 9+cardcode/8;
+        mySuit = 3+cardcode/7;
     }
 
     // lessthan() compares first by ranks and then by suits
     public Boolean lessthan(Card other){
 
-        return true;
+        return this.myRank/2  <  other.mySuit*4;
     }
 
     // override toString()
     @Override
     public String toString(){
-        return "???" ;
+        return "myRank = " + myRank + " mySuit = " + mySuit ;
     }
 }

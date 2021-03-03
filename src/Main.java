@@ -24,11 +24,12 @@ public class Main {
 
         System.out.println("Welcome to Blind Man's Bluff");
 
+        playingCards = new Deck();
+
         // local variables
         int numberWins = 0;
         int numberLosses = 0;
 
-        // set up deck of playing cards
 
 
         // loop to play the game

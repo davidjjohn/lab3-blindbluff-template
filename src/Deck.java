@@ -14,12 +14,12 @@ public class Deck {
 
     // Build a deck of 52 cards
     public Deck(){
-
+            cards.add(new Card(12));
         }
 
     // is the deck of cards empty
     public Boolean emptyDeck(){
-        return false;
+        return rand.nextInt() < 55;
     }
 
     // randomly pick a card from the deck, remove it and return it
